@@ -1,16 +1,10 @@
 import express from 'express'
+import publicRoutes from './routes/public.js'
 
 const app = express()
+app.use(express.json())
 
+app.use('/', publicRoutes)
 
-/*3 rotas
- 
-Rotas Públicas
-    cadastra e  login
-
-Rotas Privadas
-    listar usuário (so entra com token)
-
-*/
 
 app.listen(8080, () => console.log("Servidor rodando 👌"))
