@@ -10,9 +10,9 @@ router.get('/listar-usuarios', async (req, res) => {
 
         const users = await prisma.user.findMany({omit: {password: true}})
 
-        res.status(200).json({message: 'Usuários listados com successo', users})
+        res.status(200).json({message: 'listados com successo', users})
     } catch(err) {
-        res.status(500).json({message: 'Falha no  servidor'})
+        res.status(500).json({message: 'Falhou o  servidor'})
     }
 
 

@@ -10,5 +10,5 @@ app.use('/', publicRoutes)
 app.use('/', auth, privateRoutes)
 
 
-app.listen(8080, () => console.log("Servidor rodando 👌"))
+app.listen(8080, () => console.log("Servidor funcionando"))
 

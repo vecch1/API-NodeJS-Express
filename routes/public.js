@@ -29,8 +29,8 @@ router.post('/cadastro',  async (req , res) => {
     res.status(201).json(userDB)
     }
     catch(err){
-        console.error("Erro detalhado:", err); // Log do erro completo
-        res.status(500).json({ message: "Erro no servidor, tente novamente" });
+        console.error("Erro detalhado:", err); 
+        res.status(500).json({ message: "Erro no servidor" });
     }
 })
 
